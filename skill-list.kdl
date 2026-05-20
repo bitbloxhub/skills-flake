@@ -20,6 +20,7 @@ skills {
 	github "microsoft/azure-skills"
 	github "mitsuhiko/agent-stuff"
 	github "obra/superpowers"
+	github "openclaw/openclaw"
 	github "remotion-dev/skills"
 	github "shadcn/ui"
 	github "supabase/agent-skills"

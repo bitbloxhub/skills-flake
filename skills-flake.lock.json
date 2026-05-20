@@ -10910,6 +10910,865 @@
           }
         }
       },
+      "openclaw": {
+        "openclaw": {
+          "1password": {
+            "hash": "sha256-xQW2qKAG//et+87WQpiOCSR53vyl0P3A0wZ/5rS2ee0=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/1password"
+          },
+          "apple-notes": {
+            "hash": "sha256-Q2Di9T8+3HrbXN0FuJlFHfU5THxWKXDkSc01esz1a1Q=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/apple-notes"
+          },
+          "apple-reminders": {
+            "hash": "sha256-gjnKpwz2AQgAG9v4ptCaCpuiO7pOBsjFyDFAjSYfvN4=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/apple-reminders"
+          },
+          "bear-notes": {
+            "hash": "sha256-7jFrJZ8x9l5EwUarUkQkSRiOvFIXvvw6RUx8elMEZrs=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/bear-notes"
+          },
+          "blogwatcher": {
+            "hash": "sha256-+zDghxIner0y+7XYQM02Q4mlgcfm3I0jSksG5LfXTIc=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/blogwatcher"
+          },
+          "blucli": {
+            "hash": "sha256-EPJ/bwIxc8eTvm1MCFbeDd8cnI3t/WqRJntOslcsCv4=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/blucli"
+          },
+          "camsnap": {
+            "hash": "sha256-c8PJqGGDUk8vBxz6kXfHnB6t9Ub3Hhd4Z6TtxK4sNXc=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/camsnap"
+          },
+          "canvas": {
+            "hash": "sha256-+qLZbbW+STbxSz1J0nJ5HJfMLUQDFuQSitotoIiSmEc=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/canvas"
+          },
+          "clawhub": {
+            "hash": "sha256-aODkcfG7eWDnWClGDdcXR5ctj8I1JlOfOZmHpLWFBi0=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/clawhub"
+          },
+          "coding-agent": {
+            "hash": "sha256-s/7Nxk5lL9k6OErCX8yDxFpaUG2yZYyt3gs9cQH1ww4=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/coding-agent"
+          },
+          "diagram-maker": {
+            "hash": "sha256-ZWdqlMECDLcmYlLSIqcJbIQFzMREc8a/UXewBQ8CNcg=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/diagram-maker"
+          },
+          "discord": {
+            "hash": "sha256-qM5PF1BHVD8mIZ+D5oi9GDXvnxDrtCoKlLV9lvGuHkk=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/discord"
+          },
+          "eightctl": {
+            "hash": "sha256-I84Z7gbiWqfTrmUsqi7dbg8NWCwFJdA9whcrSF/t6uI=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/eightctl"
+          },
+          "gemini": {
+            "hash": "sha256-xoroFgDhYo9rnDpHY7YjpmzPXxSpJe8lFMOGsZg9um8=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/gemini"
+          },
+          "gh-issues": {
+            "hash": "sha256-tw5bjxiXLlUmiL3NW4gpBeeiKTZGiFLxVwHEdYebxfk=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/gh-issues"
+          },
+          "gifgrep": {
+            "hash": "sha256-wOnXAOkoxlHHSbVNJxVXVlvkXtVwtENcKJfKN5us8kY=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/gifgrep"
+          },
+          "github": {
+            "hash": "sha256-LL+lB7Mz5JW/6B5NXx/U/WZJ4M2iT9zkQJSz7D+3P8A=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/github"
+          },
+          "gog": {
+            "hash": "sha256-sysFg9qO/2tDdhhmwTHZCBOjdZDhbblyJ3K88SmU51c=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/gog"
+          },
+          "goplaces": {
+            "hash": "sha256-XRCLkd37X7Ls4DuG2vGqgo62siYpVuPPuJZHx7au90w=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/goplaces"
+          },
+          "healthcheck": {
+            "hash": "sha256-QRfBjEFfsp1nQDnF4nhsjLCwP7yEpw60ArPF1L4EQLM=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/healthcheck"
+          },
+          "himalaya": {
+            "hash": "sha256-rPjdv2HWJv4LdgqOwFktZVBqgIHOnmTlCAKfQiYgR8w=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/himalaya"
+          },
+          "imsg": {
+            "hash": "sha256-FUItsDNXJRup46E6fCET3BGWv+tYRk/itKeGZ6C3dos=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/imsg"
+          },
+          "mcporter": {
+            "hash": "sha256-nPxushKrnRg0zMf0IyosVs5/LuwoxCppjwrGut9XybU=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/mcporter"
+          },
+          "meme-maker": {
+            "hash": "sha256-paDBiwt6mI7RXEaxdA/8kkpy+/8K2Fsw9OyNdyd46iQ=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/meme-maker"
+          },
+          "model-usage": {
+            "hash": "sha256-RrM3y23UjHUop2LZKXyXuzphxY+O3FZMIxSSwTQKjSY=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/model-usage"
+          },
+          "nano-pdf": {
+            "hash": "sha256-zfSas/4C4NgOFRJ3VPA7+KCBV+YSMWfMI/aggBSukSA=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/nano-pdf"
+          },
+          "node-connect": {
+            "hash": "sha256-olPjsTwE48lTnm4sfoMRXE/+kTV8WwOA3TeRvfK+744=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/node-connect"
+          },
+          "node-inspect-debugger": {
+            "hash": "sha256-V9eDjKikK8BTDC/gn67e896wt1ZAHxEWvA8nuvfNE48=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/node-inspect-debugger"
+          },
+          "notion": {
+            "hash": "sha256-aOEXgqTN+Vkajs3bfC8acePPnzgHu4hIi2B//0rPjOw=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/notion"
+          },
+          "obsidian": {
+            "hash": "sha256-WuxhbMmw1v+gcTdHHq5M5eZrjIbLihIm+5UYY7Hcs/0=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/obsidian"
+          },
+          "openai-whisper": {
+            "hash": "sha256-ykiSdyr9z6Osvah3GUKoS+1QiU7Wdhpapz9Ex4AwgsI=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/openai-whisper"
+          },
+          "openai-whisper-api": {
+            "hash": "sha256-ac8G4Mm+XNissohaCAiSyShsL6PvabpPkOrv+xvep5o=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/openai-whisper-api"
+          },
+          "openhue": {
+            "hash": "sha256-qQWnVlmu014jbhKgL8yh+XZRn5xa1aNse5Zb5XAq8aI=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/openhue"
+          },
+          "oracle": {
+            "hash": "sha256-95LaeAPWZTLZrpVDMNdLmQoMVaZDciI5BQVE6cvHWyQ=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/oracle"
+          },
+          "ordercli": {
+            "hash": "sha256-x9IoMm7tziEWpvSqSEjPVbwMHidVINlGnXMIP9AO00k=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/ordercli"
+          },
+          "peekaboo": {
+            "hash": "sha256-2MUvJs/8RcKBFLYOl0K4OpDU6L6PPVVgEjZvpTLGqi4=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/peekaboo"
+          },
+          "python-debugpy": {
+            "hash": "sha256-6hnkX4apflOcbCxaesYwstzCHZLoYUg/n+J+lM4gnQw=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/python-debugpy"
+          },
+          "sag": {
+            "hash": "sha256-kEaGphi6bkGIeNd9pno9VAAGV3uU9xOgBXUZk5Nawz4=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/sag"
+          },
+          "session-logs": {
+            "hash": "sha256-xt+huHBBc8aXwwXqnn0kbfKTZQ2T/1xfLx/l8wS7hL4=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/session-logs"
+          },
+          "sherpa-onnx-tts": {
+            "hash": "sha256-rwrI96KQvUK/+6ZuocsP7eGpwsx/FZZwtxBPn/M0Mis=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/sherpa-onnx-tts"
+          },
+          "skill-creator": {
+            "hash": "sha256-PXlqcaI/fFyKMawZY8g9k023Qk5DyT0BN6l4xp/OkLc=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/skill-creator"
+          },
+          "slack": {
+            "hash": "sha256-hUefvJZfVW7YHMerP4bBvGmc7ZEZFD7bKVD/FubPj9w=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/slack"
+          },
+          "songsee": {
+            "hash": "sha256-xh+LwQRFXjT9QuqDQiiQ3ngiFbfiddCTRv4fRzwea+w=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/songsee"
+          },
+          "sonoscli": {
+            "hash": "sha256-TSeB4EM6fvQz8vvGLsvhJbeV2RWkAefklLj7/fJgOuc=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/sonoscli"
+          },
+          "spike": {
+            "hash": "sha256-lrYe4POvCAIz6x90FM0wg9GTCD8FZjdlMK3kJa4lxwk=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/spike"
+          },
+          "spotify-player": {
+            "hash": "sha256-GzvEZqSAcH9FjEZzRYA0HNwPZC6DphAD+/izJq+R154=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/spotify-player"
+          },
+          "summarize": {
+            "hash": "sha256-isHk0WQEecKeu1bbhwK1kopCn31CQJ+jNDCpz0K8O9Y=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/summarize"
+          },
+          "taskflow": {
+            "hash": "sha256-ONKcZSXq5x6YY9e02GOpw8TuYs/EOINcxgLHFhn1aeU=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/taskflow"
+          },
+          "taskflow-inbox-triage": {
+            "hash": "sha256-byNzuC6KSknBIJuvEcj3upal/YIDoRf/X3++Q02oNIQ=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/taskflow-inbox-triage"
+          },
+          "things-mac": {
+            "hash": "sha256-8qpiDd2JRDXSVQNrldGtKXuLdMs5J2+D4Ro9A5YDshM=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/things-mac"
+          },
+          "tmux": {
+            "hash": "sha256-Ag73tJJ3bG+irqp1KA0boFAN2/7Cpi+vcqJBlkChjTA=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/tmux"
+          },
+          "trello": {
+            "hash": "sha256-lE4K4dd6ZOUtAWwb6Q9kNkcZYcJJ4LxAmDs4r46so8E=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/trello"
+          },
+          "video-frames": {
+            "hash": "sha256-HitNO8tPgl+njzzPV6GdZG8ol05yH07zFJUIZINV3Aw=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/video-frames"
+          },
+          "voice-call": {
+            "hash": "sha256-7xRHX3zp6pZwXFIpcmSXljg03TnlZnVtC3zp3w63smA=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/voice-call"
+          },
+          "wacli": {
+            "hash": "sha256-ePiNlVVLKBXnA7tauneuHHsptteK1qQaHVeTzRwharM=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/wacli"
+          },
+          "weather": {
+            "hash": "sha256-3iJ50CkG4E4uHQ6E/VUCL4TJFPucTD5ggmlmiSKrm3c=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/weather"
+          },
+          "xurl": {
+            "hash": "sha256-ia4z64vgRuSVuAY2aaBl+2580dpGaQKSHhtwkOE2r3k=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/openclaw/openclaw.git",
+              "repo": "openclaw/openclaw",
+              "branch": null,
+              "rev": "384451343191f9f6f205aa4bfdc2386168482e45",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/xurl"
+          }
+        }
+      },
       "remotion-dev": {
         "skills": {
           "remotion": {
