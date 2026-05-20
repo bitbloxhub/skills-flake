@@ -3,7 +3,7 @@ use std::{collections::BTreeMap, io::IsTerminal};
 use futures_util::stream::{FuturesUnordered, StreamExt};
 use indicatif::ProgressStyle;
 use owo_colors::OwoColorize;
-use tracing::{info, info_span};
+use tracing::{field, info_span};
 use tracing_indicatif::span_ext::IndicatifSpanExt;
 
 use crate::{
@@ -93,7 +93,6 @@ pub async fn update(
 	};
 
 	let use_progress = use_progress_ui();
-	let log_info = std::env::var("TERM").map_or(false, |term| term == "dumb");
 	const MAX_INFLIGHT_PREFETCH: usize = 16;
 
 	let mut total_tasks = 0_u64;
@@ -105,29 +104,26 @@ pub async fn update(
 	let header_span = info_span!("header");
 	if use_progress {
 		header_span.pb_set_style(&ProgressStyle::with_template("{wide_msg} {pos}/{len}").unwrap());
-		header_span.pb_set_length(0);
-		header_span.pb_set_message(&render_gradient_bar(
-			completed,
-			total_tasks,
-			terminal_bar_width()?,
-		));
+		sync_header_progress(&header_span, completed, total_tasks)?;
 	}
 	let _header_enter = header_span.enter();
 
 	for source in parsed_skill_list_kdl.skills {
 		total_tasks += 1;
 		if use_progress {
-			header_span.pb_set_length(total_tasks);
-			header_span.pb_set_message(&render_gradient_bar(
-				completed,
-				total_tasks,
-				terminal_bar_width()?,
-			));
+			sync_header_progress(&header_span, completed, total_tasks)?;
 		}
 		let use_progress_for_scan = use_progress;
 		let parent_span = header_span.clone();
 		source_tasks.push(smol::spawn(async move {
-			let scan_span = info_span!(parent: &parent_span, "scan.repo", url = %source.url);
+			let scan_span = info_span!(
+				parent: &parent_span,
+				"scan.repo",
+				url = %source.url,
+				found = field::Empty,
+				cached = field::Empty,
+				queued = field::Empty
+			);
 			if use_progress_for_scan {
 				let scan_style = ProgressStyle::with_template(
 					"{span_child_prefix}{spinner:.cyan} {span_name}{{{span_fields}}} {msg}",
@@ -152,6 +148,7 @@ pub async fn update(
 	while let Some(scan_result) = source_tasks.next().await {
 		let (source, resolved_rev, skills, scan_span) = scan_result?;
 		repo_report.entry(source.url.clone()).or_default().found = skills.len() as u64;
+		scan_span.record("found", skills.len() as i64);
 		let mut skills_to_prefetch = skills.clone();
 
 		if locked_rev_for_source(&skills_flake_lock.source, &source).as_deref()
@@ -161,6 +158,7 @@ pub async fn update(
 			skills_to_prefetch
 				.retain(|skill| !lock_has_skill(&skills_flake_lock.source, &source, skill));
 			let skipped_skills = total_before.saturating_sub(skills_to_prefetch.len() as u64);
+			scan_span.record("cached", skipped_skills as i64);
 			if skipped_skills > 0 {
 				repo_report.entry(source.url.clone()).or_default().skipped += skipped_skills;
 			}
@@ -168,38 +166,21 @@ pub async fn update(
 				completed += 1;
 				if use_progress {
 					header_span.pb_inc(1);
-					header_span.pb_set_message(&render_gradient_bar(
-						completed,
-						total_tasks,
-						terminal_bar_width()?,
-					));
+					sync_header_progress(&header_span, completed, total_tasks)?;
 				}
 				continue;
 			}
 		}
 
 		total_tasks += skills_to_prefetch.len() as u64;
+		scan_span.record("queued", skills_to_prefetch.len() as i64);
 		if use_progress {
-			header_span.pb_set_length(total_tasks);
-			header_span.pb_set_message(&render_gradient_bar(
-				completed,
-				total_tasks,
-				terminal_bar_width()?,
-			));
-		}
-		if log_info {
-			info!(url = %source.url, skills = skills.len(), "scan.repo");
+			sync_header_progress(&header_span, completed, total_tasks)?;
 		}
 		completed += 1;
 		if use_progress {
 			header_span.pb_inc(1);
-			header_span.pb_set_message(&render_gradient_bar(
-				completed,
-				total_tasks,
-				terminal_bar_width()?,
-			));
-		} else if log_info {
-			info!(url = %source.url, skills = skills.len(), "scan.repo.done");
+			sync_header_progress(&header_span, completed, total_tasks)?;
 		}
 		for skill in skills_to_prefetch {
 			let source_for_prefetch = SkillSource {
@@ -221,30 +202,14 @@ pub async fn update(
 	{
 		while prefetch_tasks.len() >= MAX_INFLIGHT_PREFETCH {
 			if let Some(prefetch_result) = prefetch_tasks.next().await {
-				let (skill, lock_entry): (String, SkillLockEntry) = prefetch_result?;
-				let key_path =
-					hierarchy_path(&lock_entry.source.source, &lock_entry.source.repo, &skill);
-				let lock_url = lock_entry.source.url.clone();
-				insert_lock_entry(&mut skills_flake_lock.source, &key_path, lock_entry);
-				repo_report
-					.entry(lock_url)
-					.or_default()
-					.prefetched
-					.push(skill.clone());
+				apply_prefetch_result(prefetch_result?, &mut skills_flake_lock, &mut repo_report);
 				completed += 1;
 				if use_progress {
 					header_span.pb_inc(1);
-					header_span.pb_set_message(&render_gradient_bar(
-						completed,
-						total_tasks,
-						terminal_bar_width()?,
-					));
-				} else if log_info {
-					info!(skill = %skill, "prefetch.skill.done");
+					sync_header_progress(&header_span, completed, total_tasks)?;
 				}
 			}
 		}
-
 		let source_for_prefetch_clone = source_for_prefetch.clone();
 		let use_progress_for_prefetch = use_progress;
 		let skill_span = info_span!(
@@ -264,9 +229,6 @@ pub async fn update(
 		}
 
 		prefetch_tasks.push(smol::spawn(async move {
-			if log_info {
-				info!(url = %url_for_span, skill = %skill_for_prefetch, "prefetch.skill");
-			}
 			let _skill_guard = skill_span.enter();
 			let skill_for_prefetch_unblock = skill_for_prefetch.clone();
 			let prefetch = smol::unblock(move || {
@@ -288,25 +250,11 @@ pub async fn update(
 	}
 
 	while let Some(prefetch_result) = prefetch_tasks.next().await {
-		let (skill, lock_entry): (String, SkillLockEntry) = prefetch_result?;
-		let key_path = hierarchy_path(&lock_entry.source.source, &lock_entry.source.repo, &skill);
-		let lock_url = lock_entry.source.url.clone();
-		insert_lock_entry(&mut skills_flake_lock.source, &key_path, lock_entry);
-		repo_report
-			.entry(lock_url)
-			.or_default()
-			.prefetched
-			.push(skill.clone());
+		apply_prefetch_result(prefetch_result?, &mut skills_flake_lock, &mut repo_report);
 		completed += 1;
 		if use_progress {
 			header_span.pb_inc(1);
-			header_span.pb_set_message(&render_gradient_bar(
-				completed,
-				total_tasks,
-				terminal_bar_width()?,
-			));
-		} else if log_info {
-			info!(skill = %skill, "prefetch.skill.done");
+			sync_header_progress(&header_span, completed, total_tasks)?;
 		}
 	}
 
@@ -322,6 +270,36 @@ pub async fn update(
 	// TODO: final report in TUI mode
 
 	Ok(skills_flake_lock)
+}
+
+fn sync_header_progress(
+	header_span: &tracing::Span,
+	completed: u64,
+	total_tasks: u64,
+) -> Result<()> {
+	header_span.pb_set_length(total_tasks);
+	header_span.pb_set_message(&render_gradient_bar(
+		completed,
+		total_tasks,
+		terminal_bar_width()?,
+	));
+	Ok(())
+}
+
+fn apply_prefetch_result(
+	prefetch_result: (String, SkillLockEntry),
+	skills_flake_lock: &mut SkillsFlakeLock,
+	repo_report: &mut BTreeMap<String, RepoReport>,
+) {
+	let (skill, lock_entry) = prefetch_result;
+	let key_path = hierarchy_path(&lock_entry.source.source, &lock_entry.source.repo, &skill);
+	let lock_url = lock_entry.source.url.clone();
+	insert_lock_entry(&mut skills_flake_lock.source, &key_path, lock_entry);
+	repo_report
+		.entry(lock_url)
+		.or_default()
+		.prefetched
+		.push(skill.clone());
 }
 
 fn hierarchy_path(provider: &str, repo: &str, skill: &str) -> Vec<String> {

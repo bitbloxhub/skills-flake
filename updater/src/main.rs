@@ -1,4 +1,4 @@
-use std::{fs, path::PathBuf};
+use std::{fs, io::IsTerminal, path::PathBuf};
 
 use clap::{Parser, Subcommand};
 use indicatif::ProgressStyle;
@@ -7,7 +7,7 @@ use skills_flake_updater::{
 	sort_skill_list_kdl, update,
 };
 use tracing_indicatif::IndicatifLayer;
-use tracing_subscriber::{layer::SubscriberExt, util::SubscriberInitExt};
+use tracing_subscriber::{fmt::format::FmtSpan, layer::SubscriberExt, util::SubscriberInitExt};
 
 #[derive(Parser)]
 #[command(version, long_about = None)]
@@ -46,23 +46,36 @@ fn main() {
 }
 
 async fn run() -> UpdaterResult<()> {
-	let indicatif_layer = IndicatifLayer::new()
-		.with_max_progress_bars(
-			64,
-			Some(ProgressStyle::with_template("… {pending_progress_bars} more hidden").unwrap()),
-		)
-		.with_progress_style(
-			ProgressStyle::with_template(
-				"{span_child_prefix}{spinner} {span_name}{{{span_fields}}} {wide_msg}",
+	if use_dumb_logging() {
+		tracing_subscriber::registry()
+			.with(
+				tracing_subscriber::fmt::layer()
+					.with_span_events(FmtSpan::NEW | FmtSpan::CLOSE)
+					.with_writer(std::io::stderr),
 			)
-			.unwrap(),
-		);
-	let stderr_writer = indicatif_layer.get_stderr_writer();
+			.init();
+	} else {
+		let indicatif_layer = IndicatifLayer::new()
+			.with_max_progress_bars(
+				64,
+				Some(
+					ProgressStyle::with_template("… {pending_progress_bars} more hidden").unwrap(),
+				),
+			)
+			.with_progress_style(
+				ProgressStyle::with_template(
+					"{span_child_prefix}{spinner} {span_name}{{{span_fields}}} {wide_msg}",
+				)
+				.unwrap(),
+			);
+		let stderr_writer = indicatif_layer.get_stderr_writer();
 
-	tracing_subscriber::registry()
-		.with(tracing_subscriber::fmt::layer().with_writer(stderr_writer))
-		.with(indicatif_layer)
-		.init();
+		tracing_subscriber::registry()
+			.with(tracing_subscriber::fmt::layer().with_writer(stderr_writer))
+			.with(indicatif_layer)
+			.init();
+	}
+
 	match Cli::parse().command {
 		Commands::Update {
 			skill_list_kdl,
@@ -114,4 +127,16 @@ async fn run() -> UpdaterResult<()> {
 	}
 
 	Ok(())
+}
+
+fn use_dumb_logging() -> bool {
+	let is_ci = std::env::var("CI")
+		.map(|v| {
+			let v = v.trim().to_ascii_lowercase();
+			!v.is_empty() && v != "0" && v != "false"
+		})
+		.unwrap_or(false);
+	std::env::var("TERM").map_or(false, |term| term == "dumb")
+		|| !std::io::stderr().is_terminal()
+		|| is_ci
 }
