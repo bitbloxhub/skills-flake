@@ -153,18 +153,20 @@
         universal = ".agents/skills";
       };
 
+      progEnabled = name: lib.attrByPath [ "programs" name "enable" ] false config;
+
       agentEnableDefaults = {
-        codex = config.programs.codex.enable;
-        claude-code = config.programs.claude-code.enable;
-        amp = config.programs.amp.enable;
-        antigravity = config.programs.antigravity.enable;
-        cursor = config.programs.cursor.enable;
-        gemini-cli = config.programs.gemini-cli.enable;
-        mistral-vibe = config.programs.mistral-vibe.enable;
-        opencode = config.programs.opencode.enable;
-        windsurf = config.programs.windsurf.enable;
-        github-copilot = config.programs.github-copilot-cli.enable;
-        kiro-cli = config.programs.kiro.enable;
+        codex = progEnabled "codex";
+        claude-code = progEnabled "claude-code";
+        amp = progEnabled "amp";
+        antigravity = progEnabled "antigravity";
+        cursor = progEnabled "cursor";
+        gemini-cli = progEnabled "gemini-cli";
+        mistral-vibe = progEnabled "mistral-vibe";
+        opencode = progEnabled "opencode";
+        windsurf = progEnabled "windsurf";
+        github-copilot = progEnabled "github-copilot-cli";
+        kiro-cli = progEnabled "kiro";
         universal = true;
       };
 
