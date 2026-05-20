@@ -15,7 +15,7 @@
         skillName: entry:
         let
           inherit (entry) source;
-          skillPath = "${source.skills_dir}/${skillName}";
+          skillPath = "${entry.root_dir}";
         in
         pkgs.fetchgit {
           name = "skill-${skillName}";

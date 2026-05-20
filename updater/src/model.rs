@@ -52,6 +52,7 @@ pub enum LockNode {
 pub struct SkillLockEntry {
 	pub hash: String,
 	pub source: SkillSource,
+	pub root_dir: String,
 }
 
 #[derive(Debug, Clone, Deserialize)]
