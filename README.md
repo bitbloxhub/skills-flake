@@ -118,7 +118,16 @@ nix run .#updater -- sort-skill-list
 nix run .#updater -- update
 ```
 
+To update only a subset of repos:
+
+```bash
+nix run .#updater -- update --repo github:owner/repo
+nix run .#updater -- update --repo https://github.com/owner/repo.git
+nix run .#updater -- update --repo github:owner/repo --repo github:other/repo
+```
+
 This updates `skills-flake.lock.json` with pinned revisions and hashes.
+Subset updates keep existing lockfile entries for non-selected repos.
 
 ## Development
 

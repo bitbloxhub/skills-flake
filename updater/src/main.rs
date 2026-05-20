@@ -24,6 +24,8 @@ enum Commands {
 		skill_list_kdl: PathBuf,
 		#[arg(long, default_value = "./skills-flake.lock.json")]
 		skills_flake_lock_json: PathBuf,
+		#[arg(long = "repo", value_name = "REPO_OR_URL")]
+		repo: Vec<String>,
 	},
 	SortSkillList {
 		#[arg(long, default_value = "./skill-list.kdl")]
@@ -80,13 +82,27 @@ async fn run() -> UpdaterResult<()> {
 		Commands::Update {
 			skill_list_kdl,
 			skills_flake_lock_json,
+			repo,
 		} => {
 			let skill_list_src =
 				fs::read_to_string(&skill_list_kdl).map_err(|source| UpdaterError::ReadFile {
 					path: skill_list_kdl.display().to_string(),
 					source,
 				})?;
-			let parsed_skill_list_kdl = parse_skill_list_kdl(&skill_list_src)?;
+			let mut parsed_skill_list_kdl = parse_skill_list_kdl(&skill_list_src)?;
+			if !repo.is_empty() {
+				let filters = normalize_repo_filters(&repo);
+				parsed_skill_list_kdl.skills.retain(|source| {
+					filters
+						.iter()
+						.any(|filter| source_matches_repo_filter(source, filter))
+				});
+				if parsed_skill_list_kdl.skills.is_empty() {
+					return Err(UpdaterError::NoMatchingRepos {
+						filters: filters.join(", "),
+					});
+				}
+			}
 			let skills_flake_lock = if skills_flake_lock_json.exists() {
 				let lock_src = fs::read_to_string(&skills_flake_lock_json).map_err(|source| {
 					UpdaterError::ReadFile {
@@ -139,4 +155,48 @@ fn use_dumb_logging() -> bool {
 	std::env::var("TERM").map_or(false, |term| term == "dumb")
 		|| !std::io::stderr().is_terminal()
 		|| is_ci
+}
+
+fn normalize_repo_filters(repo_filters: &[String]) -> Vec<String> {
+	let mut filters = repo_filters
+		.iter()
+		.flat_map(|raw| raw.split(','))
+		.map(str::trim)
+		.filter(|part| !part.is_empty())
+		.map(ToString::to_string)
+		.collect::<Vec<_>>();
+	filters.sort();
+	filters.dedup();
+	filters
+}
+
+fn source_matches_repo_filter(source: &skills_flake_updater::SkillSource, filter: &str) -> bool {
+	let (provider_filter, repo_filter_raw) = filter
+		.split_once(':')
+		.filter(|(left, _)| !left.contains("//"))
+		.map_or((None, filter), |(provider, rest)| (Some(provider), rest));
+
+	if provider_filter.is_some_and(|provider| provider != source.source) {
+		return false;
+	}
+
+	let repo_filter = normalize_repo_like(repo_filter_raw);
+	if normalize_repo_like(&source.repo) == repo_filter || normalize_repo_like(&source.url) == repo_filter {
+		return true;
+	}
+
+	if let Some((_, rest)) = source.url.split_once("://") {
+		if let Some(path_start) = rest.find('/') {
+			let path = &rest[path_start + 1..];
+			if normalize_repo_like(path) == repo_filter {
+				return true;
+			}
+		}
+	}
+
+	false
+}
+
+fn normalize_repo_like(value: &str) -> String {
+	value.trim().trim_end_matches(".git").trim_end_matches('/').to_string()
 }

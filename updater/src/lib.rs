@@ -45,6 +45,8 @@ pub enum UpdaterError {
 		#[source]
 		source: serde_json::Error,
 	},
+	#[error("no matching repos for filters: {filters}")]
+	NoMatchingRepos { filters: String },
 }
 
 #[derive(Debug, Error, Diagnostic)]
