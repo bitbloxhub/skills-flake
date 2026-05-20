@@ -53,6 +53,7 @@
         };
         settings.global.excludes = [
           "**/Cargo.nix"
+          "**/skills-flake.lock.json"
         ];
       };
     };
