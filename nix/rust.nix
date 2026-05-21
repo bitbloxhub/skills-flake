@@ -52,6 +52,7 @@
           name = "updater";
           paths = [ updaterUnwrapped ];
           nativeBuildInputs = [ pkgs.makeWrapper ];
+          meta.mainProgram = "skills-flake-updater";
           postBuild = ''
             wrapProgram "$out/bin/skills-flake-updater" \
               --prefix PATH : ${pkgs.lib.makeBinPath [ pkgs.nix-prefetch-git ]}
