@@ -44,7 +44,19 @@
         ];
       };
 
-      packages.updater = updaterCargoWorkspace.rootCrate.build;
+      packages.updater =
+        let
+          updaterUnwrapped = updaterCargoWorkspace.rootCrate.build;
+        in
+        pkgs.symlinkJoin {
+          name = "updater";
+          paths = [ updaterUnwrapped ];
+          nativeBuildInputs = [ pkgs.makeWrapper ];
+          postBuild = ''
+            wrapProgram "$out/bin/skills-flake-updater" \
+              --prefix PATH : ${pkgs.lib.makeBinPath [ pkgs.nix-prefetch-git ]}
+          '';
+        };
 
       treefmt = {
         programs.rustfmt = {
