@@ -181,7 +181,9 @@ fn source_matches_repo_filter(source: &skills_flake_updater::SkillSource, filter
 	}
 
 	let repo_filter = normalize_repo_like(repo_filter_raw);
-	if normalize_repo_like(&source.repo) == repo_filter || normalize_repo_like(&source.url) == repo_filter {
+	if normalize_repo_like(&source.repo) == repo_filter
+		|| normalize_repo_like(&source.url) == repo_filter
+	{
 		return true;
 	}
 
@@ -198,5 +200,9 @@ fn source_matches_repo_filter(source: &skills_flake_updater::SkillSource, filter
 }
 
 fn normalize_repo_like(value: &str) -> String {
-	value.trim().trim_end_matches(".git").trim_end_matches('/').to_string()
+	value
+		.trim()
+		.trim_end_matches(".git")
+		.trim_end_matches('/')
+		.to_string()
 }
