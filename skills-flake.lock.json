@@ -1539,6 +1539,573 @@
           }
         }
       },
+      "android": {
+        "skills": {
+          "build": {
+            "agp": {
+              "agp-9-upgrade": {
+                "hash": "sha256-ge6cST4vhwn1unxCjgDIq4LY8X177dOgY9mtgYFUS6M=",
+                "source": {
+                  "source": "github",
+                  "url": "https://github.com/android/skills.git",
+                  "repo": "android/skills",
+                  "branch": null,
+                  "rev": "a8f3525d5a1f7fe250fecd0fca43a87755433c8f",
+                  "tag": null,
+                  "skills_dir": ".",
+                  "skills": [],
+                  "ignored_dirs": []
+                },
+                "root_dir": "./build/agp/agp-9-upgrade"
+              }
+            }
+          },
+          "camera": {
+            "camera1-to-camerax": {
+              "hash": "sha256-eerUP13LrnqjATP+lDnWs44D0SCMn386y32vbJncmqw=",
+              "source": {
+                "source": "github",
+                "url": "https://github.com/android/skills.git",
+                "repo": "android/skills",
+                "branch": null,
+                "rev": "a8f3525d5a1f7fe250fecd0fca43a87755433c8f",
+                "tag": null,
+                "skills_dir": ".",
+                "skills": [],
+                "ignored_dirs": []
+              },
+              "root_dir": "./camera/camera1-to-camerax"
+            }
+          },
+          "device-ai": {
+            "appfunctions": {
+              "hash": "sha256-DBPpFdsGhrzC7yd8ayFvgvTPbWn7+bFRDKE4dE7USZI=",
+              "source": {
+                "source": "github",
+                "url": "https://github.com/android/skills.git",
+                "repo": "android/skills",
+                "branch": null,
+                "rev": "a8f3525d5a1f7fe250fecd0fca43a87755433c8f",
+                "tag": null,
+                "skills_dir": ".",
+                "skills": [],
+                "ignored_dirs": []
+              },
+              "root_dir": "./device-ai/appfunctions"
+            }
+          },
+          "devtools": {
+            "android-cli": {
+              "hash": "sha256-JeOzXvWFdUnGi+AG/964ytHDnb+hxoWEuU/cRlovsP0=",
+              "source": {
+                "source": "github",
+                "url": "https://github.com/android/skills.git",
+                "repo": "android/skills",
+                "branch": null,
+                "rev": "a8f3525d5a1f7fe250fecd0fca43a87755433c8f",
+                "tag": null,
+                "skills_dir": ".",
+                "skills": [],
+                "ignored_dirs": []
+              },
+              "root_dir": "./devtools/android-cli"
+            }
+          },
+          "identity": {
+            "verified-email": {
+              "hash": "sha256-9YM9vBu+amisXjfMwK3Y5xvxkvyE409PcSNQkFVon28=",
+              "source": {
+                "source": "github",
+                "url": "https://github.com/android/skills.git",
+                "repo": "android/skills",
+                "branch": null,
+                "rev": "a8f3525d5a1f7fe250fecd0fca43a87755433c8f",
+                "tag": null,
+                "skills_dir": ".",
+                "skills": [],
+                "ignored_dirs": []
+              },
+              "root_dir": "./identity/verified-email"
+            }
+          },
+          "jetpack-compose": {
+            "adaptive": {
+              "hash": "sha256-iyVJMbeI2iTsxWxYK/p9Q8GB70hgbaEIl0fETul51hI=",
+              "source": {
+                "source": "github",
+                "url": "https://github.com/android/skills.git",
+                "repo": "android/skills",
+                "branch": null,
+                "rev": "a8f3525d5a1f7fe250fecd0fca43a87755433c8f",
+                "tag": null,
+                "skills_dir": ".",
+                "skills": [],
+                "ignored_dirs": []
+              },
+              "root_dir": "./jetpack-compose/adaptive"
+            },
+            "migration": {
+              "migrate-xml-views-to-jetpack-compose": {
+                "hash": "sha256-Q7xWtu/sBqR3bt8j+WUjThfSDLLp/jUHWusXx/3J+14=",
+                "source": {
+                  "source": "github",
+                  "url": "https://github.com/android/skills.git",
+                  "repo": "android/skills",
+                  "branch": null,
+                  "rev": "a8f3525d5a1f7fe250fecd0fca43a87755433c8f",
+                  "tag": null,
+                  "skills_dir": ".",
+                  "skills": [],
+                  "ignored_dirs": []
+                },
+                "root_dir": "./jetpack-compose/migration/migrate-xml-views-to-jetpack-compose"
+              }
+            },
+            "theming": {
+              "styles": {
+                "hash": "sha256-gDvbvA0tjBZyscUSAaEDgvluOhGFXJ3ZAikpONVQdF8=",
+                "source": {
+                  "source": "github",
+                  "url": "https://github.com/android/skills.git",
+                  "repo": "android/skills",
+                  "branch": null,
+                  "rev": "a8f3525d5a1f7fe250fecd0fca43a87755433c8f",
+                  "tag": null,
+                  "skills_dir": ".",
+                  "skills": [],
+                  "ignored_dirs": []
+                },
+                "root_dir": "./jetpack-compose/theming/styles"
+              }
+            }
+          },
+          "navigation": {
+            "navigation-3": {
+              "hash": "sha256-5MqwDHWdXEL6+XjKcwBGNaaBMPgV++jAacsELKOHJAw=",
+              "source": {
+                "source": "github",
+                "url": "https://github.com/android/skills.git",
+                "repo": "android/skills",
+                "branch": null,
+                "rev": "a8f3525d5a1f7fe250fecd0fca43a87755433c8f",
+                "tag": null,
+                "skills_dir": ".",
+                "skills": [],
+                "ignored_dirs": []
+              },
+              "root_dir": "./navigation/navigation-3"
+            }
+          },
+          "performance": {
+            "r8-analyzer": {
+              "hash": "sha256-RPeaCot8E59dYQL4JzJUAZ687L8kychZa0xKdZ4dM4w=",
+              "source": {
+                "source": "github",
+                "url": "https://github.com/android/skills.git",
+                "repo": "android/skills",
+                "branch": null,
+                "rev": "a8f3525d5a1f7fe250fecd0fca43a87755433c8f",
+                "tag": null,
+                "skills_dir": ".",
+                "skills": [],
+                "ignored_dirs": []
+              },
+              "root_dir": "./performance/r8-analyzer"
+            }
+          },
+          "play": {
+            "engage-sdk-integration": {
+              "hash": "sha256-mmmvNZSdIEWW8QIM+KigW+l4I9KiiEQIF8zTywEGE8M=",
+              "source": {
+                "source": "github",
+                "url": "https://github.com/android/skills.git",
+                "repo": "android/skills",
+                "branch": null,
+                "rev": "a8f3525d5a1f7fe250fecd0fca43a87755433c8f",
+                "tag": null,
+                "skills_dir": ".",
+                "skills": [],
+                "ignored_dirs": []
+              },
+              "root_dir": "./play/engage-sdk-integration"
+            },
+            "play-billing-library-version-upgrade": {
+              "hash": "sha256-gy9/BkwfeWcdJHtXp7zK+lEBsv81F/pa18ahi1FQaIw=",
+              "source": {
+                "source": "github",
+                "url": "https://github.com/android/skills.git",
+                "repo": "android/skills",
+                "branch": null,
+                "rev": "a8f3525d5a1f7fe250fecd0fca43a87755433c8f",
+                "tag": null,
+                "skills_dir": ".",
+                "skills": [],
+                "ignored_dirs": []
+              },
+              "root_dir": "./play/play-billing-library-version-upgrade"
+            }
+          },
+          "profilers": {
+            "perfetto-sql": {
+              "hash": "sha256-CWAYYjcDVar1Fsbh/OL8uRJURyXM+u7yKWhtXuaMgpU=",
+              "source": {
+                "source": "github",
+                "url": "https://github.com/android/skills.git",
+                "repo": "android/skills",
+                "branch": null,
+                "rev": "a8f3525d5a1f7fe250fecd0fca43a87755433c8f",
+                "tag": null,
+                "skills_dir": ".",
+                "skills": [],
+                "ignored_dirs": []
+              },
+              "root_dir": "./profilers/perfetto-sql"
+            },
+            "perfetto-trace-analysis": {
+              "hash": "sha256-UAfBNOoGjxNKX4C9uek0XS/cLaTtxkz+AwTur8TbsVE=",
+              "source": {
+                "source": "github",
+                "url": "https://github.com/android/skills.git",
+                "repo": "android/skills",
+                "branch": null,
+                "rev": "a8f3525d5a1f7fe250fecd0fca43a87755433c8f",
+                "tag": null,
+                "skills_dir": ".",
+                "skills": [],
+                "ignored_dirs": []
+              },
+              "root_dir": "./profilers/perfetto-trace-analysis"
+            }
+          },
+          "system": {
+            "edge-to-edge": {
+              "hash": "sha256-Qzw8f6CPXzFGE+RVprU585oPhAVEHi/3xrp70qzspm8=",
+              "source": {
+                "source": "github",
+                "url": "https://github.com/android/skills.git",
+                "repo": "android/skills",
+                "branch": null,
+                "rev": "a8f3525d5a1f7fe250fecd0fca43a87755433c8f",
+                "tag": null,
+                "skills_dir": ".",
+                "skills": [],
+                "ignored_dirs": []
+              },
+              "root_dir": "./system/edge-to-edge"
+            }
+          },
+          "testing": {
+            "testing-setup": {
+              "hash": "sha256-AgJG7LWfLtW9X78YgrDNjaC9qrqkyPYDDvdcelzgBc4=",
+              "source": {
+                "source": "github",
+                "url": "https://github.com/android/skills.git",
+                "repo": "android/skills",
+                "branch": null,
+                "rev": "a8f3525d5a1f7fe250fecd0fca43a87755433c8f",
+                "tag": null,
+                "skills_dir": ".",
+                "skills": [],
+                "ignored_dirs": []
+              },
+              "root_dir": "./testing/testing-setup"
+            }
+          },
+          "wear": {
+            "jetpack-compose-m3": {
+              "hash": "sha256-SIr4m2WnEdyy6028VjCMFptSEInKYSI+pqo31boGNPs=",
+              "source": {
+                "source": "github",
+                "url": "https://github.com/android/skills.git",
+                "repo": "android/skills",
+                "branch": null,
+                "rev": "a8f3525d5a1f7fe250fecd0fca43a87755433c8f",
+                "tag": null,
+                "skills_dir": ".",
+                "skills": [],
+                "ignored_dirs": []
+              },
+              "root_dir": "./wear/jetpack-compose-m3"
+            }
+          },
+          "xr": {
+            "display-glasses-with-jetpack-compose-glimmer": {
+              "hash": "sha256-wlCFObFFO26lM3Lm9BB5vwRrf/tJPRzcQkpWjX3Idbc=",
+              "source": {
+                "source": "github",
+                "url": "https://github.com/android/skills.git",
+                "repo": "android/skills",
+                "branch": null,
+                "rev": "a8f3525d5a1f7fe250fecd0fca43a87755433c8f",
+                "tag": null,
+                "skills_dir": ".",
+                "skills": [],
+                "ignored_dirs": []
+              },
+              "root_dir": "./xr/display-glasses-with-jetpack-compose-glimmer"
+            }
+          }
+        }
+      },
+      "antfu": {
+        "skills": {
+          "antfu": {
+            "hash": "sha256-sW1qXdJTfoQbIGTHquVRHyBX5SsufJK+dDzEEysCxJY=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/antfu/skills.git",
+              "repo": "antfu/skills",
+              "branch": null,
+              "rev": "50deaeb269d80d92db7a2c5a677290309ae307fc",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/antfu"
+          },
+          "nuxt": {
+            "hash": "sha256-OYj2zQKkwj/WvoZEqQgNfz68nQhu4OWsVOhXcUdU3q8=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/antfu/skills.git",
+              "repo": "antfu/skills",
+              "branch": null,
+              "rev": "50deaeb269d80d92db7a2c5a677290309ae307fc",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/nuxt"
+          },
+          "pinia": {
+            "hash": "sha256-ed9suyjpXJQ8rp77b5+QanKx+m4NNVIaNR6EopeHVas=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/antfu/skills.git",
+              "repo": "antfu/skills",
+              "branch": null,
+              "rev": "50deaeb269d80d92db7a2c5a677290309ae307fc",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/pinia"
+          },
+          "pnpm": {
+            "hash": "sha256-g9TLLSk8y7lH4aTFFIVlUuJmW+LCj+MgWFX/YnV0Dj4=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/antfu/skills.git",
+              "repo": "antfu/skills",
+              "branch": null,
+              "rev": "50deaeb269d80d92db7a2c5a677290309ae307fc",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/pnpm"
+          },
+          "slidev": {
+            "hash": "sha256-EbOTE9WGr81ynuYxAC/8MQHIS7GdH6xshNfdj8rR9M4=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/antfu/skills.git",
+              "repo": "antfu/skills",
+              "branch": null,
+              "rev": "50deaeb269d80d92db7a2c5a677290309ae307fc",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/slidev"
+          },
+          "tsdown": {
+            "hash": "sha256-hEqIPxle6FJG18BT14W3AAiYs1/TRRZzGiqI0m5YbpM=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/antfu/skills.git",
+              "repo": "antfu/skills",
+              "branch": null,
+              "rev": "50deaeb269d80d92db7a2c5a677290309ae307fc",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/tsdown"
+          },
+          "turborepo": {
+            "hash": "sha256-2bRSuPRn3JzJoLt4MY8jiyHn4R3OMu/GUzEdrQSn0KU=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/antfu/skills.git",
+              "repo": "antfu/skills",
+              "branch": null,
+              "rev": "50deaeb269d80d92db7a2c5a677290309ae307fc",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/turborepo"
+          },
+          "unocss": {
+            "hash": "sha256-IbvcKG2j5Hbtkuhd5VsgbJkMxHmwRDwmqBrHFLZiqcA=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/antfu/skills.git",
+              "repo": "antfu/skills",
+              "branch": null,
+              "rev": "50deaeb269d80d92db7a2c5a677290309ae307fc",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/unocss"
+          },
+          "vite": {
+            "hash": "sha256-rfnMynaBoc726SgIhmxHlwwlPz2KfXd8kk/1FAt3ckI=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/antfu/skills.git",
+              "repo": "antfu/skills",
+              "branch": null,
+              "rev": "50deaeb269d80d92db7a2c5a677290309ae307fc",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/vite"
+          },
+          "vitepress": {
+            "hash": "sha256-u2udzXSXk6DfkJ9XpD2j+ppqqjPsV8UtiCNOishg4KU=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/antfu/skills.git",
+              "repo": "antfu/skills",
+              "branch": null,
+              "rev": "50deaeb269d80d92db7a2c5a677290309ae307fc",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/vitepress"
+          },
+          "vitest": {
+            "hash": "sha256-gLlRMYvWsNEyD2T72jM5eeerVLYK0m1XcF+TrJlaY40=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/antfu/skills.git",
+              "repo": "antfu/skills",
+              "branch": null,
+              "rev": "50deaeb269d80d92db7a2c5a677290309ae307fc",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/vitest"
+          },
+          "vue": {
+            "hash": "sha256-LfTEv+P/FStyr7Krtf+YTmskq7VYVU3OeF6id16KBsU=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/antfu/skills.git",
+              "repo": "antfu/skills",
+              "branch": null,
+              "rev": "50deaeb269d80d92db7a2c5a677290309ae307fc",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/vue"
+          },
+          "vue-best-practices": {
+            "hash": "sha256-FwLLnkUXPrasbltmhEXxqquWHJBe6UKGv92x1BrybPU=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/antfu/skills.git",
+              "repo": "antfu/skills",
+              "branch": null,
+              "rev": "50deaeb269d80d92db7a2c5a677290309ae307fc",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/vue-best-practices"
+          },
+          "vue-router-best-practices": {
+            "hash": "sha256-AdSgG+cAArffxVO8Tzvdt2u0FJqbchob9FGXwscoTEM=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/antfu/skills.git",
+              "repo": "antfu/skills",
+              "branch": null,
+              "rev": "50deaeb269d80d92db7a2c5a677290309ae307fc",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/vue-router-best-practices"
+          },
+          "vue-testing-best-practices": {
+            "hash": "sha256-QjwfTXM7foe/c1iTo2vQ0YkrETNCgZlK+syzX0aAbUw=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/antfu/skills.git",
+              "repo": "antfu/skills",
+              "branch": null,
+              "rev": "50deaeb269d80d92db7a2c5a677290309ae307fc",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/vue-testing-best-practices"
+          },
+          "vueuse-functions": {
+            "hash": "sha256-GK45uCeHIjCRfYZ29ViDpxdc44goSH2+2udos/HOa+I=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/antfu/skills.git",
+              "repo": "antfu/skills",
+              "branch": null,
+              "rev": "50deaeb269d80d92db7a2c5a677290309ae307fc",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/vueuse-functions"
+          },
+          "web-design-guidelines": {
+            "hash": "sha256-UdQ77sZWusu2RA1SJO/HAXK6VdCUg2TT3V8KNnWj5qo=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/antfu/skills.git",
+              "repo": "antfu/skills",
+              "branch": null,
+              "rev": "50deaeb269d80d92db7a2c5a677290309ae307fc",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/web-design-guidelines"
+          }
+        }
+      },
       "anthropics": {
         "skills": {
           "algorithmic-art": {
@@ -2616,6 +3183,382 @@
               "ignored_dirs": []
             },
             "root_dir": "skills/web-search"
+          }
+        }
+      },
+      "browser-use": {
+        "browser-use": {
+          "browser-use": {
+            "hash": "sha256-iSayS6NEbVaEXo5AgnRLFtwvbavU67ZRtmtnRQMtaz8=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/browser-use/browser-use.git",
+              "repo": "browser-use/browser-use",
+              "branch": null,
+              "rev": "5f99e737c5e7ef3d3d4cbb121cc501991fdee72e",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/browser-use"
+          },
+          "cloud": {
+            "hash": "sha256-Q4R5wC495plbbvOGiksYhVjgPXHkD18dRWJMKwMM9UI=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/browser-use/browser-use.git",
+              "repo": "browser-use/browser-use",
+              "branch": null,
+              "rev": "5f99e737c5e7ef3d3d4cbb121cc501991fdee72e",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/cloud"
+          },
+          "open-source": {
+            "hash": "sha256-miHwZW+UI1HzLVRha87p5T8JzkXxeMKcoLgmnB29p/w=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/browser-use/browser-use.git",
+              "repo": "browser-use/browser-use",
+              "branch": null,
+              "rev": "5f99e737c5e7ef3d3d4cbb121cc501991fdee72e",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/open-source"
+          },
+          "remote-browser": {
+            "hash": "sha256-8jutBaCUjnDbjiYA1TLhGvaODoZlBoL3rySu8xDSrhY=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/browser-use/browser-use.git",
+              "repo": "browser-use/browser-use",
+              "branch": null,
+              "rev": "5f99e737c5e7ef3d3d4cbb121cc501991fdee72e",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/remote-browser"
+          }
+        }
+      },
+      "clerk": {
+        "skills": {
+          "core": {
+            "clerk": {
+              "hash": "sha256-D0hSNWoA6tBzUvmM9CEA0sJjrn+6lneZg0oyUEn3UXI=",
+              "source": {
+                "source": "github",
+                "url": "https://github.com/clerk/skills.git",
+                "repo": "clerk/skills",
+                "branch": null,
+                "rev": "7c9f117983d4caf6eb24fe0a669115a98d60a08f",
+                "tag": null,
+                "skills_dir": "skills",
+                "skills": [],
+                "ignored_dirs": []
+              },
+              "root_dir": "skills/core/clerk"
+            },
+            "clerk-backend-api": {
+              "hash": "sha256-aWWULvXT2astI/OewwIT8Ky4mOuBFDga0aARL1I65TY=",
+              "source": {
+                "source": "github",
+                "url": "https://github.com/clerk/skills.git",
+                "repo": "clerk/skills",
+                "branch": null,
+                "rev": "7c9f117983d4caf6eb24fe0a669115a98d60a08f",
+                "tag": null,
+                "skills_dir": "skills",
+                "skills": [],
+                "ignored_dirs": []
+              },
+              "root_dir": "skills/core/clerk-backend-api"
+            },
+            "clerk-custom-ui": {
+              "hash": "sha256-2W/tXyeinUTBaa+te+co5eng/7AOFtAaHQmq6kP1EDU=",
+              "source": {
+                "source": "github",
+                "url": "https://github.com/clerk/skills.git",
+                "repo": "clerk/skills",
+                "branch": null,
+                "rev": "7c9f117983d4caf6eb24fe0a669115a98d60a08f",
+                "tag": null,
+                "skills_dir": "skills",
+                "skills": [],
+                "ignored_dirs": []
+              },
+              "root_dir": "skills/core/clerk-custom-ui"
+            },
+            "clerk-setup": {
+              "hash": "sha256-Yo/7hHpmRcbwZQ4Q6vTiIZwsXSaOOGRmyDu/y6cXhlw=",
+              "source": {
+                "source": "github",
+                "url": "https://github.com/clerk/skills.git",
+                "repo": "clerk/skills",
+                "branch": null,
+                "rev": "7c9f117983d4caf6eb24fe0a669115a98d60a08f",
+                "tag": null,
+                "skills_dir": "skills",
+                "skills": [],
+                "ignored_dirs": []
+              },
+              "root_dir": "skills/core/clerk-setup"
+            }
+          },
+          "features": {
+            "clerk-billing": {
+              "hash": "sha256-3HC0P+AupU4Q2pXwcPjxXbtGI3QArYiq2TdtGMYRgNk=",
+              "source": {
+                "source": "github",
+                "url": "https://github.com/clerk/skills.git",
+                "repo": "clerk/skills",
+                "branch": null,
+                "rev": "7c9f117983d4caf6eb24fe0a669115a98d60a08f",
+                "tag": null,
+                "skills_dir": "skills",
+                "skills": [],
+                "ignored_dirs": []
+              },
+              "root_dir": "skills/features/clerk-billing"
+            },
+            "clerk-orgs": {
+              "hash": "sha256-PRIkxM6Mg/CH4O3/iZRgbeXQ7T8SRyiusg4wArsqFaE=",
+              "source": {
+                "source": "github",
+                "url": "https://github.com/clerk/skills.git",
+                "repo": "clerk/skills",
+                "branch": null,
+                "rev": "7c9f117983d4caf6eb24fe0a669115a98d60a08f",
+                "tag": null,
+                "skills_dir": "skills",
+                "skills": [],
+                "ignored_dirs": []
+              },
+              "root_dir": "skills/features/clerk-orgs"
+            },
+            "clerk-testing": {
+              "hash": "sha256-xk9B4rXt5Ow2pE6MeiMlwJD6LdMgnCm8baodX6tyACc=",
+              "source": {
+                "source": "github",
+                "url": "https://github.com/clerk/skills.git",
+                "repo": "clerk/skills",
+                "branch": null,
+                "rev": "7c9f117983d4caf6eb24fe0a669115a98d60a08f",
+                "tag": null,
+                "skills_dir": "skills",
+                "skills": [],
+                "ignored_dirs": []
+              },
+              "root_dir": "skills/features/clerk-testing"
+            },
+            "clerk-webhooks": {
+              "hash": "sha256-JQ1y7dF62QcR2yE3lDpziYKMM6j315UD8hiKpyM1Q5M=",
+              "source": {
+                "source": "github",
+                "url": "https://github.com/clerk/skills.git",
+                "repo": "clerk/skills",
+                "branch": null,
+                "rev": "7c9f117983d4caf6eb24fe0a669115a98d60a08f",
+                "tag": null,
+                "skills_dir": "skills",
+                "skills": [],
+                "ignored_dirs": []
+              },
+              "root_dir": "skills/features/clerk-webhooks"
+            }
+          },
+          "frameworks": {
+            "clerk-astro-patterns": {
+              "hash": "sha256-bmWUHV4GEeT+N03gcBLcunbSe+pULK/jZr6rbgjw4E0=",
+              "source": {
+                "source": "github",
+                "url": "https://github.com/clerk/skills.git",
+                "repo": "clerk/skills",
+                "branch": null,
+                "rev": "7c9f117983d4caf6eb24fe0a669115a98d60a08f",
+                "tag": null,
+                "skills_dir": "skills",
+                "skills": [],
+                "ignored_dirs": []
+              },
+              "root_dir": "skills/frameworks/clerk-astro-patterns"
+            },
+            "clerk-chrome-extension-patterns": {
+              "hash": "sha256-V77AXG0KvvPk+L/kSFnyEVcJ3/U1s+nTfks4/dcXa9k=",
+              "source": {
+                "source": "github",
+                "url": "https://github.com/clerk/skills.git",
+                "repo": "clerk/skills",
+                "branch": null,
+                "rev": "7c9f117983d4caf6eb24fe0a669115a98d60a08f",
+                "tag": null,
+                "skills_dir": "skills",
+                "skills": [],
+                "ignored_dirs": []
+              },
+              "root_dir": "skills/frameworks/clerk-chrome-extension-patterns"
+            },
+            "clerk-expo-patterns": {
+              "hash": "sha256-+Xa7du58sGE+9PGu8ip9WEh8SIDKyfCIyK6epPFzyvk=",
+              "source": {
+                "source": "github",
+                "url": "https://github.com/clerk/skills.git",
+                "repo": "clerk/skills",
+                "branch": null,
+                "rev": "7c9f117983d4caf6eb24fe0a669115a98d60a08f",
+                "tag": null,
+                "skills_dir": "skills",
+                "skills": [],
+                "ignored_dirs": []
+              },
+              "root_dir": "skills/frameworks/clerk-expo-patterns"
+            },
+            "clerk-nextjs-patterns": {
+              "hash": "sha256-8HIIrx11P2+J2udrUq6fx7H0ocF195OIHytu38Ce9xk=",
+              "source": {
+                "source": "github",
+                "url": "https://github.com/clerk/skills.git",
+                "repo": "clerk/skills",
+                "branch": null,
+                "rev": "7c9f117983d4caf6eb24fe0a669115a98d60a08f",
+                "tag": null,
+                "skills_dir": "skills",
+                "skills": [],
+                "ignored_dirs": []
+              },
+              "root_dir": "skills/frameworks/clerk-nextjs-patterns"
+            },
+            "clerk-nuxt-patterns": {
+              "hash": "sha256-GfsLx72PX4nElSuu4PrzKlzBJLct/NKo05jxn8Akjco=",
+              "source": {
+                "source": "github",
+                "url": "https://github.com/clerk/skills.git",
+                "repo": "clerk/skills",
+                "branch": null,
+                "rev": "7c9f117983d4caf6eb24fe0a669115a98d60a08f",
+                "tag": null,
+                "skills_dir": "skills",
+                "skills": [],
+                "ignored_dirs": []
+              },
+              "root_dir": "skills/frameworks/clerk-nuxt-patterns"
+            },
+            "clerk-react-patterns": {
+              "hash": "sha256-oc3NvB/Ryp644IkQO7reyfZWp02AuxMPKtClVY/v+m8=",
+              "source": {
+                "source": "github",
+                "url": "https://github.com/clerk/skills.git",
+                "repo": "clerk/skills",
+                "branch": null,
+                "rev": "7c9f117983d4caf6eb24fe0a669115a98d60a08f",
+                "tag": null,
+                "skills_dir": "skills",
+                "skills": [],
+                "ignored_dirs": []
+              },
+              "root_dir": "skills/frameworks/clerk-react-patterns"
+            },
+            "clerk-react-router-patterns": {
+              "hash": "sha256-Ww7kMi+fjBrQvO42Pzz6Shm2pfukGcsb7Ldn/anSWPY=",
+              "source": {
+                "source": "github",
+                "url": "https://github.com/clerk/skills.git",
+                "repo": "clerk/skills",
+                "branch": null,
+                "rev": "7c9f117983d4caf6eb24fe0a669115a98d60a08f",
+                "tag": null,
+                "skills_dir": "skills",
+                "skills": [],
+                "ignored_dirs": []
+              },
+              "root_dir": "skills/frameworks/clerk-react-router-patterns"
+            },
+            "clerk-tanstack-patterns": {
+              "hash": "sha256-jcd/8mqwOr15S8K5/uAIgUae8mdJ3rFFCD2BGlkwPIE=",
+              "source": {
+                "source": "github",
+                "url": "https://github.com/clerk/skills.git",
+                "repo": "clerk/skills",
+                "branch": null,
+                "rev": "7c9f117983d4caf6eb24fe0a669115a98d60a08f",
+                "tag": null,
+                "skills_dir": "skills",
+                "skills": [],
+                "ignored_dirs": []
+              },
+              "root_dir": "skills/frameworks/clerk-tanstack-patterns"
+            },
+            "clerk-vue-patterns": {
+              "hash": "sha256-dbGpbWEOSTCZ+h2rVyS1wx+sMugN1jCIE4AR99rvol4=",
+              "source": {
+                "source": "github",
+                "url": "https://github.com/clerk/skills.git",
+                "repo": "clerk/skills",
+                "branch": null,
+                "rev": "7c9f117983d4caf6eb24fe0a669115a98d60a08f",
+                "tag": null,
+                "skills_dir": "skills",
+                "skills": [],
+                "ignored_dirs": []
+              },
+              "root_dir": "skills/frameworks/clerk-vue-patterns"
+            }
+          },
+          "mobile": {
+            "clerk-android": {
+              "hash": "sha256-AbfUq7NwYGmryjj5xIQWKRvGfcSFEE6EwTo25jBLh+w=",
+              "source": {
+                "source": "github",
+                "url": "https://github.com/clerk/skills.git",
+                "repo": "clerk/skills",
+                "branch": null,
+                "rev": "7c9f117983d4caf6eb24fe0a669115a98d60a08f",
+                "tag": null,
+                "skills_dir": "skills",
+                "skills": [],
+                "ignored_dirs": []
+              },
+              "root_dir": "skills/mobile/clerk-android"
+            },
+            "clerk-expo": {
+              "hash": "sha256-3/ln5ya0RLMNQ1+Kwtl9Nf/QY7ABpMyGoS1csXkKIl0=",
+              "source": {
+                "source": "github",
+                "url": "https://github.com/clerk/skills.git",
+                "repo": "clerk/skills",
+                "branch": null,
+                "rev": "7c9f117983d4caf6eb24fe0a669115a98d60a08f",
+                "tag": null,
+                "skills_dir": "skills",
+                "skills": [],
+                "ignored_dirs": []
+              },
+              "root_dir": "skills/mobile/clerk-expo"
+            },
+            "clerk-swift": {
+              "hash": "sha256-Uo9jsp5ETK4pN9Txn6eK1bAcIZH+C6bW22ONvdK87Pc=",
+              "source": {
+                "source": "github",
+                "url": "https://github.com/clerk/skills.git",
+                "repo": "clerk/skills",
+                "branch": null,
+                "rev": "7c9f117983d4caf6eb24fe0a669115a98d60a08f",
+                "tag": null,
+                "skills_dir": "skills",
+                "skills": [],
+                "ignored_dirs": []
+              },
+              "root_dir": "skills/mobile/clerk-swift"
+            }
           }
         }
       },
@@ -11856,6 +12799,164 @@
           }
         }
       },
+      "sveltejs": {
+        "ai-tools": {
+          "svelte-code-writer": {
+            "hash": "sha256-DQ5dc1D5ZjxGPjxXDOPCmZqcKCf4uE9ymTD3lQPmbx0=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/sveltejs/ai-tools.git",
+              "repo": "sveltejs/ai-tools",
+              "branch": null,
+              "rev": "88cea9e5391357f47dbff40f928760c9a52261a2",
+              "tag": null,
+              "skills_dir": "tools/skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "tools/skills/svelte-code-writer"
+          },
+          "svelte-core-bestpractices": {
+            "hash": "sha256-4m30cup08Js5QTp2U/klcBQ+0KM6+ZTKEalieuTXG5U=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/sveltejs/ai-tools.git",
+              "repo": "sveltejs/ai-tools",
+              "branch": null,
+              "rev": "88cea9e5391357f47dbff40f928760c9a52261a2",
+              "tag": null,
+              "skills_dir": "tools/skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "tools/skills/svelte-core-bestpractices"
+          }
+        }
+      },
+      "tavily-ai": {
+        "skills": {
+          "tavily-best-practices": {
+            "hash": "sha256-roIvDx2rnvLjtqOuheYT2IDZAU8oDRnNQyBVKkYMJ8c=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/tavily-ai/skills.git",
+              "repo": "tavily-ai/skills",
+              "branch": null,
+              "rev": "a0fe267bf6bebb71f9e20d6b4ed8afa1251d29c6",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/tavily-best-practices"
+          },
+          "tavily-cli": {
+            "hash": "sha256-g4GhL4IbHScN1WrFNRslBq4hT/ZTaSbIyR6AILKVsPQ=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/tavily-ai/skills.git",
+              "repo": "tavily-ai/skills",
+              "branch": null,
+              "rev": "a0fe267bf6bebb71f9e20d6b4ed8afa1251d29c6",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/tavily-cli"
+          },
+          "tavily-crawl": {
+            "hash": "sha256-9MPAIPY69ZL+HOOne0rf7s8ArBdy/98QqzNQ6gg+Txg=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/tavily-ai/skills.git",
+              "repo": "tavily-ai/skills",
+              "branch": null,
+              "rev": "a0fe267bf6bebb71f9e20d6b4ed8afa1251d29c6",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/tavily-crawl"
+          },
+          "tavily-dynamic-search": {
+            "hash": "sha256-K0AqeBKvdSO3o6a9kIVHTMXRIw7lDZ34rw2MCyEw2VU=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/tavily-ai/skills.git",
+              "repo": "tavily-ai/skills",
+              "branch": null,
+              "rev": "a0fe267bf6bebb71f9e20d6b4ed8afa1251d29c6",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/tavily-dynamic-search"
+          },
+          "tavily-extract": {
+            "hash": "sha256-I5iH0rXNMteLJmh6xxiWoV74AQG7jaoKnTwLpMRB7lU=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/tavily-ai/skills.git",
+              "repo": "tavily-ai/skills",
+              "branch": null,
+              "rev": "a0fe267bf6bebb71f9e20d6b4ed8afa1251d29c6",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/tavily-extract"
+          },
+          "tavily-map": {
+            "hash": "sha256-dmumtZAmGdtg5FwJ+OBU515Eq/Wkf3x63LV12djZslQ=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/tavily-ai/skills.git",
+              "repo": "tavily-ai/skills",
+              "branch": null,
+              "rev": "a0fe267bf6bebb71f9e20d6b4ed8afa1251d29c6",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/tavily-map"
+          },
+          "tavily-research": {
+            "hash": "sha256-gtq8PDIsWY8AYEnB7ZIM+AUVYjrOeV0iWQkYkTN+Zl4=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/tavily-ai/skills.git",
+              "repo": "tavily-ai/skills",
+              "branch": null,
+              "rev": "a0fe267bf6bebb71f9e20d6b4ed8afa1251d29c6",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/tavily-research"
+          },
+          "tavily-search": {
+            "hash": "sha256-Mp/FUzRy7y51yvOJ/sPh6rUIui8jBtPuFZqOBpRq6Ps=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/tavily-ai/skills.git",
+              "repo": "tavily-ai/skills",
+              "branch": null,
+              "rev": "a0fe267bf6bebb71f9e20d6b4ed8afa1251d29c6",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/tavily-search"
+          }
+        }
+      },
       "vercel-labs": {
         "agent-browser": {
           "agent-browser": {
@@ -11994,6 +13095,398 @@
               "ignored_dirs": []
             },
             "root_dir": "skills/web-design-guidelines"
+          }
+        },
+        "json-render": {
+          "codegen": {
+            "hash": "sha256-KyMFEkKt13e2UCnGJn4yrmWbufLYAH6WV6jKeRYfXjg=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/vercel-labs/json-render.git",
+              "repo": "vercel-labs/json-render",
+              "branch": null,
+              "rev": "91833e9225a80949f7a17826ff290587b9fd43b2",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/codegen"
+          },
+          "core": {
+            "hash": "sha256-1zZ/OlA60SqqshArtixq8NhxRyVpXxg7YjTK7pBWx58=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/vercel-labs/json-render.git",
+              "repo": "vercel-labs/json-render",
+              "branch": null,
+              "rev": "91833e9225a80949f7a17826ff290587b9fd43b2",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/core"
+          },
+          "devtools": {
+            "hash": "sha256-r2H4xYHowBc3eZrS4Oq4mGqKB7xsFO1NjGxoYrEc9Eg=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/vercel-labs/json-render.git",
+              "repo": "vercel-labs/json-render",
+              "branch": null,
+              "rev": "91833e9225a80949f7a17826ff290587b9fd43b2",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/devtools"
+          },
+          "directives": {
+            "hash": "sha256-3+of5k5ZBgg0tPHPYlqiuzFmQ+Xt4k8ap3MK9Ab40+s=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/vercel-labs/json-render.git",
+              "repo": "vercel-labs/json-render",
+              "branch": null,
+              "rev": "91833e9225a80949f7a17826ff290587b9fd43b2",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/directives"
+          },
+          "image": {
+            "hash": "sha256-YNwjIyE+UN/dvQrGgeg6Opy0j9CfUPlQg24WTB2kEp4=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/vercel-labs/json-render.git",
+              "repo": "vercel-labs/json-render",
+              "branch": null,
+              "rev": "91833e9225a80949f7a17826ff290587b9fd43b2",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/image"
+          },
+          "ink": {
+            "hash": "sha256-KuyvjihdoHqm2YWrxTF6xKxs8JJpGJIDPGT+5MORSGc=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/vercel-labs/json-render.git",
+              "repo": "vercel-labs/json-render",
+              "branch": null,
+              "rev": "91833e9225a80949f7a17826ff290587b9fd43b2",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/ink"
+          },
+          "jotai": {
+            "hash": "sha256-pVPsJSyGQXF6OrNAz6JbqfqU/g+HmSNJZIplXObSKTQ=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/vercel-labs/json-render.git",
+              "repo": "vercel-labs/json-render",
+              "branch": null,
+              "rev": "91833e9225a80949f7a17826ff290587b9fd43b2",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/jotai"
+          },
+          "mcp": {
+            "hash": "sha256-QcsNduDVYNVVXtUZQg8R903kZIcjUlmh7yARvTWXggs=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/vercel-labs/json-render.git",
+              "repo": "vercel-labs/json-render",
+              "branch": null,
+              "rev": "91833e9225a80949f7a17826ff290587b9fd43b2",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/mcp"
+          },
+          "next": {
+            "hash": "sha256-LXQgGmG2YsOt3otyxiFAK6BYcQ4f8hQTAqZLbUXAbLg=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/vercel-labs/json-render.git",
+              "repo": "vercel-labs/json-render",
+              "branch": null,
+              "rev": "91833e9225a80949f7a17826ff290587b9fd43b2",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/next"
+          },
+          "react": {
+            "hash": "sha256-7mD/3iDMWNLkb7gRIiIt8vfsVinvv6G6CLy8vZf1baU=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/vercel-labs/json-render.git",
+              "repo": "vercel-labs/json-render",
+              "branch": null,
+              "rev": "91833e9225a80949f7a17826ff290587b9fd43b2",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/react"
+          },
+          "react-email": {
+            "hash": "sha256-+ytH3g0NHr8XkcD9Mj3RdYRe6bFm1JPk4vhFwHnMi3E=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/vercel-labs/json-render.git",
+              "repo": "vercel-labs/json-render",
+              "branch": null,
+              "rev": "91833e9225a80949f7a17826ff290587b9fd43b2",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/react-email"
+          },
+          "react-native": {
+            "hash": "sha256-sA2AlHfy+YS8qKx8z/8Xq4aVOl073iSA0yNON/2cCew=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/vercel-labs/json-render.git",
+              "repo": "vercel-labs/json-render",
+              "branch": null,
+              "rev": "91833e9225a80949f7a17826ff290587b9fd43b2",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/react-native"
+          },
+          "react-pdf": {
+            "hash": "sha256-5tq4025lHtcFj1wBzHauCq9W46Z7+BXQSUf0HEJFnQU=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/vercel-labs/json-render.git",
+              "repo": "vercel-labs/json-render",
+              "branch": null,
+              "rev": "91833e9225a80949f7a17826ff290587b9fd43b2",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/react-pdf"
+          },
+          "react-three-fiber": {
+            "hash": "sha256-FxNkI/D855evsm5h2Nign6sXXSeE0umDa1ko3EkGEbQ=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/vercel-labs/json-render.git",
+              "repo": "vercel-labs/json-render",
+              "branch": null,
+              "rev": "91833e9225a80949f7a17826ff290587b9fd43b2",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/react-three-fiber"
+          },
+          "redux": {
+            "hash": "sha256-7iJ+6jvVs5nHCmHSlJhYjfgEhO0aD4WS1xqg4N/cSi4=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/vercel-labs/json-render.git",
+              "repo": "vercel-labs/json-render",
+              "branch": null,
+              "rev": "91833e9225a80949f7a17826ff290587b9fd43b2",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/redux"
+          },
+          "remotion": {
+            "hash": "sha256-RNrUMXnHdNO7bBR7gcWnnMVwgkAS4Ob80h1GNTTX/OA=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/vercel-labs/json-render.git",
+              "repo": "vercel-labs/json-render",
+              "branch": null,
+              "rev": "91833e9225a80949f7a17826ff290587b9fd43b2",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/remotion"
+          },
+          "remotion-best-practices": {
+            "hash": "sha256-K8S2cVwWf7P7VOqr79l7T3iXwUnLUtpHNhnzHGl9TfY=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/vercel-labs/json-render.git",
+              "repo": "vercel-labs/json-render",
+              "branch": null,
+              "rev": "91833e9225a80949f7a17826ff290587b9fd43b2",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/remotion-best-practices"
+          },
+          "shadcn": {
+            "hash": "sha256-uUWPg4HCUhw1ncScB5V+UwbGHIxj/uJn63UUp7TS2mo=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/vercel-labs/json-render.git",
+              "repo": "vercel-labs/json-render",
+              "branch": null,
+              "rev": "91833e9225a80949f7a17826ff290587b9fd43b2",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/shadcn"
+          },
+          "shadcn-svelte": {
+            "hash": "sha256-OETex2uiUymXSAZPnkbYBGtzAQFwSVN3cK0RdjNH758=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/vercel-labs/json-render.git",
+              "repo": "vercel-labs/json-render",
+              "branch": null,
+              "rev": "91833e9225a80949f7a17826ff290587b9fd43b2",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/shadcn-svelte"
+          },
+          "skill-creator": {
+            "hash": "sha256-y4Cym0PNjDi5c/b0BOTuJALwukQJhIK1coALh3gY6Q8=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/vercel-labs/json-render.git",
+              "repo": "vercel-labs/json-render",
+              "branch": null,
+              "rev": "91833e9225a80949f7a17826ff290587b9fd43b2",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/skill-creator"
+          },
+          "solid": {
+            "hash": "sha256-2rS3srG27YoDgatied1/h7BANoK0XwN4mVOjeWlDXOI=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/vercel-labs/json-render.git",
+              "repo": "vercel-labs/json-render",
+              "branch": null,
+              "rev": "91833e9225a80949f7a17826ff290587b9fd43b2",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/solid"
+          },
+          "svelte": {
+            "hash": "sha256-rGsi2CJIOUbowyR4r/Sg/RWKv0OeV7J47kjgCrK4Zo4=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/vercel-labs/json-render.git",
+              "repo": "vercel-labs/json-render",
+              "branch": null,
+              "rev": "91833e9225a80949f7a17826ff290587b9fd43b2",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/svelte"
+          },
+          "vue": {
+            "hash": "sha256-qm4ADIZ8e2H9sSNLiX1Vj8xZn6zxcXs/l+gEe8d65mM=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/vercel-labs/json-render.git",
+              "repo": "vercel-labs/json-render",
+              "branch": null,
+              "rev": "91833e9225a80949f7a17826ff290587b9fd43b2",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/vue"
+          },
+          "xstate": {
+            "hash": "sha256-4Zkac268GXIQJc5SDtF3dryY3rappVertor5k2Zq2wU=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/vercel-labs/json-render.git",
+              "repo": "vercel-labs/json-render",
+              "branch": null,
+              "rev": "91833e9225a80949f7a17826ff290587b9fd43b2",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/xstate"
+          },
+          "yaml": {
+            "hash": "sha256-EJs1VJIDO8Z5VXWXL0YTOMPc66vR+Ihop7wr2ecz3yg=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/vercel-labs/json-render.git",
+              "repo": "vercel-labs/json-render",
+              "branch": null,
+              "rev": "91833e9225a80949f7a17826ff290587b9fd43b2",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/yaml"
+          },
+          "zustand": {
+            "hash": "sha256-4Y7YTtJmyslKaglBTDeyUj60iyWRSexrTujBoie8VjQ=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/vercel-labs/json-render.git",
+              "repo": "vercel-labs/json-render",
+              "branch": null,
+              "rev": "91833e9225a80949f7a17826ff290587b9fd43b2",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/zustand"
           }
         },
         "skills": {
