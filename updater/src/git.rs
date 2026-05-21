@@ -16,6 +16,12 @@ pub fn build_skill_source(
 	ignored_dirs: Option<Vec<String>>,
 ) -> Result<SkillSource> {
 	let (source, repo) = parse_git_source_and_repo(&url)?;
+	let skills_dir = match skills_dir.as_deref() {
+		Some("/") => ".".to_string(),
+		Some(dir) => dir.to_string(),
+		None => "skills".to_string(),
+	};
+
 	Ok(SkillSource {
 		source,
 		url,
@@ -23,7 +29,7 @@ pub fn build_skill_source(
 		branch,
 		rev,
 		tag,
-		skills_dir: skills_dir.unwrap_or_else(|| "skills".to_string()),
+		skills_dir,
 		skills: skills.unwrap_or_default(),
 		ignored_dirs: ignored_dirs.unwrap_or_default(),
 	})
@@ -82,29 +88,40 @@ pub fn parse_git_source_and_repo(url: &str) -> Result<(String, String)> {
 
 pub fn fetch_skill_dirs(source: &SkillSource) -> Result<(String, Vec<String>)> {
 	let tmp = mktemp_dir()?;
-	run_cmd(
-		Command::new("git")
-			.arg("clone")
-			.arg("--filter=blob:none")
-			.arg("--sparse")
-			.arg("--no-checkout")
-			.arg(source.git_url())
-			.arg(tmp.path()),
-	)?;
-	run_cmd(
-		Command::new("git")
-			.current_dir(tmp.path())
-			.arg("sparse-checkout")
-			.arg("init")
-			.arg("--cone"),
-	)?;
-	run_cmd(
-		Command::new("git")
-			.current_dir(tmp.path())
-			.arg("sparse-checkout")
-			.arg("set")
-			.arg(&source.skills_dir),
-	)?;
+	if source.skills_dir == "." {
+		run_cmd(
+			Command::new("git")
+				.arg("clone")
+				.arg("--depth")
+				.arg("1")
+				.arg(source.git_url())
+				.arg(tmp.path()),
+		)?;
+	} else {
+		run_cmd(
+			Command::new("git")
+				.arg("clone")
+				.arg("--filter=blob:none")
+				.arg("--sparse")
+				.arg("--no-checkout")
+				.arg(source.git_url())
+				.arg(tmp.path()),
+		)?;
+		run_cmd(
+			Command::new("git")
+				.current_dir(tmp.path())
+				.arg("sparse-checkout")
+				.arg("init")
+				.arg("--cone"),
+		)?;
+		run_cmd(
+			Command::new("git")
+				.current_dir(tmp.path())
+				.arg("sparse-checkout")
+				.arg("set")
+				.arg(&source.skills_dir),
+		)?;
+	}
 	if let Some(reference) = source.ref_arg() {
 		run_cmd(
 			Command::new("git")
@@ -143,7 +160,11 @@ pub fn fetch_skill_dirs(source: &SkillSource) -> Result<(String, Vec<String>)> {
 	}
 	let resolved_rev = String::from_utf8_lossy(&rev_out.stdout).trim().to_string();
 
-	let skills_root = tmp.path().join(&source.skills_dir);
+	let skills_root = if source.skills_dir == "." {
+		tmp.path().to_path_buf()
+	} else {
+		tmp.path().join(&source.skills_dir)
+	};
 	let mut skills = Vec::new();
 	let selected = source.skills.iter().cloned().collect::<HashSet<_>>();
 	let mut seen_selected = HashSet::new();
@@ -176,7 +197,11 @@ pub fn fetch_skill_dirs(source: &SkillSource) -> Result<(String, Vec<String>)> {
 }
 
 pub fn prefetch_skill(source: &SkillSource, skill: &str) -> Result<PrefetchOutput> {
-	let sparse_path = format!("{}/{}", source.skills_dir, skill);
+	let sparse_path = if source.skills_dir == "." {
+		skill.to_string()
+	} else {
+		format!("{}/{}", source.skills_dir, skill)
+	};
 	let mut cmd = Command::new("nix-prefetch-git");
 	cmd.arg("--quiet")
 		.arg("--url")

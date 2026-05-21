@@ -240,10 +240,15 @@ pub async fn update(
 				..source_for_prefetch
 			};
 			let skills_dir = source_for_skill.skills_dir.clone();
+			let root_dir = if skills_dir == "." {
+				skill_for_prefetch.clone()
+			} else {
+				format!("{}/{}", skills_dir, skill_for_prefetch)
+			};
 			let lock_entry = SkillLockEntry {
 				hash: prefetch.hash,
 				source: source_for_skill,
-				root_dir: format!("{}/{}", skills_dir, skill_for_prefetch),
+				root_dir,
 			};
 			Ok::<_, UpdaterError>((skill_for_prefetch, lock_entry))
 		}));
