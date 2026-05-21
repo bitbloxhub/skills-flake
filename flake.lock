@@ -70,6 +70,22 @@
         "type": "github"
       }
     },
+    "files": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1778677964,
+        "narHash": "sha256-5CBChRuRALkalrd3bOTZnOETDp0bS1VvYIVnLI7VHgc=",
+        "owner": "mightyiam",
+        "repo": "files",
+        "rev": "79173d7b566bd504c9cb8db409991335765e6700",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mightyiam",
+        "repo": "files",
+        "type": "github"
+      }
+    },
     "flake-file": {
       "locked": {
         "lastModified": 1779051720,
@@ -122,6 +138,29 @@
       "original": {
         "owner": "NotAShelf",
         "repo": "flint",
+        "type": "github"
+      }
+    },
+    "github-actions-nix": {
+      "inputs": {
+        "flake-parts": [
+          "flake-parts"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1773808042,
+        "narHash": "sha256-97K9g40SdtDVWslJG8ytpiC3+qgeQzftsZheGQ8qoGY=",
+        "owner": "synapdeck",
+        "repo": "github-actions-nix",
+        "rev": "805a4f69856e0f3d0bcd8ae916f1625f22b0578c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "synapdeck",
+        "repo": "github-actions-nix",
         "type": "github"
       }
     },
@@ -242,9 +281,11 @@
       "inputs": {
         "crate2nix": "crate2nix",
         "fenix": "fenix",
+        "files": "files",
         "flake-file": "flake-file",
         "flake-parts": "flake-parts",
         "flint": "flint",
+        "github-actions-nix": "github-actions-nix",
         "import-tree": "import-tree",
         "make-shell": "make-shell",
         "nixpkgs": "nixpkgs",

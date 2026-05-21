@@ -21,6 +21,10 @@
       url = "github:nix-community/fenix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    files = {
+      url = "github:mightyiam/files";
+      flake = false;
+    };
     flake-file.url = "github:vic/flake-file";
     flake-parts = {
       url = "github:hercules-ci/flake-parts";
@@ -29,6 +33,13 @@
     flint = {
       url = "github:NotAShelf/flint";
       inputs.nixpkgs.follows = "nixpkgs";
+    };
+    github-actions-nix = {
+      url = "github:synapdeck/github-actions-nix";
+      inputs = {
+        flake-parts.follows = "flake-parts";
+        nixpkgs.follows = "nixpkgs";
+      };
     };
     import-tree.url = "github:vic/import-tree";
     make-shell = {
