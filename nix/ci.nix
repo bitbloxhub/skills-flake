@@ -76,8 +76,9 @@
               }
               {
                 name = "Finish oranc setup";
-                # NOTE: use my fork for Lix support
-                uses = "bitbloxhub/oranc-action@lix";
+                # NOTE: use linyinfeng branch for Lix support
+                # TODO: switch back to main after https://github.com/linyinfeng/oranc-action/pull/68 merges
+                uses = "linyinfeng/oranc-action@lix";
                 with_ = {
                   repositoryPart1 = "\${{ github.repository_owner }}";
                   repositoryPart2 = "skills-flake/oranc";

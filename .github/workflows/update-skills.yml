@@ -23,7 +23,7 @@ jobs:
           ./result/bin/oranc server --listen "127.0.0.1:9999" --repository-parts 3 &
           rm result
       - name: Finish oranc setup
-        uses: bitbloxhub/oranc-action@lix
+        uses: linyinfeng/oranc-action@lix
         with:
           initialize: true
           orancServerType: url
