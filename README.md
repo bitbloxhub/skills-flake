@@ -53,7 +53,6 @@ Supported agents:
 
 - [aider-desk](https://aiderdesk.hotovo.com/): `.aider-desk/skills`
 - [amp](https://ampcode.com/): `${config.xdg.configHome}/agents/skills`
-- [antigravity](https://github.com/google-antigravity/antigravity-cli): `.gemini/antigravity/skills`
 - [augment](https://www.augmentcode.com/): `.augment/skills`
 - [bob](https://bob.ibm.com/): `.bob/skills`
 - [claude-code](https://claude.com/product/claude-code): `<claude configDir>/skills`
@@ -75,7 +74,6 @@ Supported agents:
 - [droid](https://factory.ai/): `.factory/skills`
 - [firebender](https://firebender.com/): `.firebender/skills`
 - [forgecode](https://forgecode.dev/): `.forge/skills`
-- [gemini-cli](https://github.com/google-gemini/gemini-cli): `.gemini/skills`
 - [github-copilot](https://github.com/features/copilot): `<copilot configDir>/skills`
 - [goose](https://goose-docs.ai/): `${config.xdg.configHome}/goose/skills`
 - [hermes-agent](https://hermes-agent.org/): `.hermes/skills`

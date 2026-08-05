@@ -21,7 +21,6 @@
       agentNames = [
         "aider-desk"
         "amp"
-        "antigravity"
         "augment"
         "bob"
         "claude-code"
@@ -43,7 +42,6 @@
         "droid"
         "firebender"
         "forgecode"
-        "gemini-cli"
         "github-copilot"
         "goose"
         "hermes-agent"
@@ -86,7 +84,6 @@
       agentSkillDirs = {
         aider-desk = ".aider-desk/skills";
         amp = "${config.xdg.configHome}/agents/skills";
-        antigravity = ".gemini/antigravity/skills";
         augment = ".augment/skills";
         bob = ".bob/skills";
         claude-code = "${
@@ -114,7 +111,6 @@
         droid = ".factory/skills";
         firebender = ".firebender/skills";
         forgecode = ".forge/skills";
-        gemini-cli = ".gemini/skills";
         github-copilot = "${
           lib.attrByPath [
             "programs"
@@ -159,9 +155,7 @@
         codex = progEnabled "codex";
         claude-code = progEnabled "claude-code";
         amp = progEnabled "amp";
-        antigravity = progEnabled "antigravity";
         cursor = progEnabled "cursor";
-        gemini-cli = progEnabled "gemini-cli";
         mistral-vibe = progEnabled "mistral-vibe";
         opencode = progEnabled "opencode";
         windsurf = progEnabled "windsurf";
