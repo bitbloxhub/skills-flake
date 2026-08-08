@@ -1,4 +1,5 @@
 skills {
+	github "1broseidon/ketch"
 	github "NousResearch/hermes-agent"
 	github "OpenRouterTeam/skills"
 	github "android/skills" skills_dir="/"

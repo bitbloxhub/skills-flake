@@ -2,6 +2,25 @@
   "version": 1,
   "source": {
     "github": {
+      "1broseidon": {
+        "ketch": {
+          "ketch": {
+            "hash": "sha256-eSBjLanXsutfwCB4oWH62jgzW4zawHA6b5Z9028AQFM=",
+            "source": {
+              "source": "github",
+              "url": "https://github.com/1broseidon/ketch.git",
+              "repo": "1broseidon/ketch",
+              "branch": null,
+              "rev": "00afdcbf865b238cd4caad291831c538c4590512",
+              "tag": null,
+              "skills_dir": "skills",
+              "skills": [],
+              "ignored_dirs": []
+            },
+            "root_dir": "skills/ketch"
+          }
+        }
+      },
       "NousResearch": {
         "hermes-agent": {
           "apple": {
