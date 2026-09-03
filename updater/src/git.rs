@@ -197,44 +197,68 @@ pub fn fetch_skill_dirs(source: &SkillSource) -> Result<(String, Vec<String>)> {
 }
 
 pub fn prefetch_skill(source: &SkillSource, skill: &str) -> Result<PrefetchOutput> {
+	const MAX_ATTEMPTS: usize = 5;
+	const INITIAL_BACKOFF: Duration = Duration::from_secs(60);
+
 	let sparse_path = if source.skills_dir == "." {
 		skill.to_string()
 	} else {
 		format!("{}/{}", source.skills_dir, skill)
 	};
-	let mut cmd = Command::new("nix-prefetch-git");
-	cmd.arg("--quiet")
-		.arg("--url")
-		.arg(source.git_url())
-		.arg("--sparse-checkout")
-		.arg(&sparse_path)
-		.arg("--root-dir")
-		.arg(&sparse_path);
-	if let Some(rev) = source.rev.as_deref() {
-		cmd.arg("--rev").arg(rev);
-	} else if let Some(tag) = source.tag.as_deref() {
-		cmd.arg("--rev").arg(tag);
-	} else if let Some(branch) = source.branch.as_deref() {
-		cmd.arg("--branch-name").arg(branch);
-	}
 
-	let out = cmd.output().map_err(|err| {
-		if err.kind() == std::io::ErrorKind::NotFound {
-			UpdaterError::MissingCommand {
-				command: "nix-prefetch-git".to_string(),
-			}
-		} else {
-			UpdaterError::Io(err)
+	for attempt in 1..=MAX_ATTEMPTS {
+		let mut cmd = Command::new("nix-prefetch-git");
+		cmd.arg("--quiet")
+			.arg("--url")
+			.arg(source.git_url())
+			.arg("--sparse-checkout")
+			.arg(&sparse_path)
+			.arg("--root-dir")
+			.arg(&sparse_path);
+		if let Some(rev) = source.rev.as_deref() {
+			cmd.arg("--rev").arg(rev);
+		} else if let Some(tag) = source.tag.as_deref() {
+			cmd.arg("--rev").arg(tag);
+		} else if let Some(branch) = source.branch.as_deref() {
+			cmd.arg("--branch-name").arg(branch);
 		}
-	})?;
-	if !out.status.success() {
+
+		let out = cmd.output().map_err(|err| {
+			if err.kind() == std::io::ErrorKind::NotFound {
+				UpdaterError::MissingCommand {
+					command: "nix-prefetch-git".to_string(),
+				}
+			} else {
+				UpdaterError::Io(err)
+			}
+		})?;
+		if out.status.success() {
+			return Ok(serde_json::from_slice::<PrefetchOutput>(&out.stdout)?);
+		}
+
+		let stderr = String::from_utf8_lossy(&out.stderr).trim().to_string();
+		if attempt < MAX_ATTEMPTS && is_rate_limited(&stderr) {
+			let backoff = INITIAL_BACKOFF.saturating_mul(1 << (attempt - 1));
+			std::thread::sleep(backoff);
+			continue;
+		}
+
 		cleanup_git_checkout_err_dirs(Duration::from_secs(60 * 10));
 		return Err(UpdaterError::CommandFailed {
 			cmd: "nix-prefetch-git".to_string(),
-			stderr: String::from_utf8_lossy(&out.stderr).trim().to_string(),
+			stderr,
 		});
 	}
-	Ok(serde_json::from_slice::<PrefetchOutput>(&out.stdout)?)
+
+	unreachable!()
+}
+
+fn is_rate_limited(stderr: &str) -> bool {
+	let stderr = stderr.to_ascii_lowercase();
+	stderr.contains("429")
+		|| stderr.contains("rate limit")
+		|| stderr.contains("rate-limited")
+		|| stderr.contains("too many requests")
 }
 
 fn run_cmd(cmd: &mut Command) -> Result<()> {
