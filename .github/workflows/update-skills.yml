@@ -5,9 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7.0.1
       - name: nothing-but-nix
-        uses: wimpysworld/nothing-but-nix@main
+        uses: wimpysworld/nothing-but-nix@v10
         with:
           hatchet-protocol: rampage
       - name: Install Lix
@@ -23,7 +23,7 @@ jobs:
           ./result/bin/oranc server --listen "127.0.0.1:9999" --repository-parts 3 &
           rm result
       - name: Finish oranc setup
-        uses: linyinfeng/oranc-action@lix
+        uses: linyinfeng/oranc-action@v1.0.9
         with:
           initialize: true
           orancServerType: url

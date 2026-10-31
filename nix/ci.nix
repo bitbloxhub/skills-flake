@@ -47,11 +47,11 @@
             steps = [
               {
                 name = "Checkout";
-                uses = "actions/checkout@v6";
+                uses = "actions/checkout@v7.0.1";
               }
               {
                 name = "nothing-but-nix";
-                uses = "wimpysworld/nothing-but-nix@main";
+                uses = "wimpysworld/nothing-but-nix@v10";
                 # MAXIMUM SPACE!!!!!
                 with_.hatchet-protocol = "rampage";
               }
@@ -76,9 +76,7 @@
               }
               {
                 name = "Finish oranc setup";
-                # NOTE: use linyinfeng branch for Lix support
-                # TODO: switch back to main after https://github.com/linyinfeng/oranc-action/pull/68 merges
-                uses = "linyinfeng/oranc-action@lix";
+                uses = "linyinfeng/oranc-action@v1.0.9";
                 with_ = {
                   repositoryPart1 = "\${{ github.repository_owner }}";
                   repositoryPart2 = "skills-flake/oranc";
