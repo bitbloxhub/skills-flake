@@ -13,7 +13,6 @@ skills {
 	github "clerk/skills"
 	github "cloudflare/skills"
 	github "coderabbitai/skills"
-	github "degausai/wonda"
 	github "duckdb/duckdb-skills"
 	github "firecrawl/cli"
 	github "github/awesome-copilot"
